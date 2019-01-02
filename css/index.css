@@ -1,0 +1,65 @@
+html{
+    font-size: 20px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: slategrey;
+    color: white;
+}
+.container{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+}
+.header{
+    display: block;
+    position: fixed;
+    background-color: slategrey;
+    top: 0rem;
+    width: 100%;
+    height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.list-container{
+    margin-top: 6rem;
+}
+ul{
+    list-style-type: none;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    overflow-y: auto;
+}
+li{
+    padding: 0.7rem 0 0 2rem;
+    height: 2rem;
+    background-color: rgb(166, 178, 189);
+    margin-block-end: 0.5rem;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    vertical-align: middle;
+}
+li:hover{
+    cursor: pointer;
+    background-color: rgb(207, 221, 235);
+}
+
+#text-input{
+    height: 1.5rem;
+    width: 10rem;
+    padding: 0.5rem;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+}
+#button-add{
+    margin-left: -0.5rem;
+    height: 1.5rem;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}

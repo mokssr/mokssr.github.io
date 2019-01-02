@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Test Page for PWA</title>
+    <title>Simple ToDo List</title>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-    <h1>Hello World</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur alias vel velit doloremque adipisci.
-        Voluptate a sint, necessitatibus consequatur eum laborum saepe tempora enim soluta! Consequatur necessitatibus
-        qui dolor expedita!</p>
-    <button id="alertButton">Click Me!</button>
+    <div class="container">
+        <header class="header">
+            <span>My ToDo List</span>
+            <div class="inputs">
+                <input type="text" id="text-input">
+                <button id="button-add" onclick="addItem()">Add</button>
+            </div>
+        </header>
+        <div class="list-container">
+            <ul id="list">
+            </ul>
+        </div>
+    </div>
     <script src="./js/index.js"></script>
 </body>
 
