@@ -1,3 +1,13 @@
+if('serviceWorker' in navigator){
+    window.addEventListener('load', ()=>{
+        navigator.serviceWorker
+            .register('./../service-worker.js')
+            .then(reg=> console.log('Service worker registered'))
+            .catch(err=> console.log(`error ${err}`))
+    })
+}
+
+
 function addItem() {
     var textInput = document.getElementById('text-input')
     var text = textInput.value
@@ -6,6 +16,7 @@ function addItem() {
     if(text == ''){
         alert('Field empty!')
         textInput.value = ''
+        textInput.focus()
         return
     }
 

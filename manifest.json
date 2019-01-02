@@ -1,0 +1,26 @@
+{
+    "short_name":"ToDo",
+    "name":"ToDo List",
+    "author":"Sukma Raharja",
+    "background_color":"#708090",
+    "description":"Simple ToDo Page",
+    "display":"standalone",
+    "icons":[
+        {
+            "src":"/images/icon-192.png",
+            "type":"image/png",
+            "sizes":"192x192"
+        },
+        {
+            "src":"/images/icon-512.png",
+            "type":"image/png",
+            "sizes":"512x512"
+        }
+    ],
+    "start_url":"/index.html",
+    "manifest_version":1,
+    "orientation":"portrait-primary",
+    "theme_color":"#708090",
+    "version":"1.0.0",
+    "scope":"/"
+}
