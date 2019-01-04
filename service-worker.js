@@ -34,3 +34,10 @@ self.addEventListener('fetch', e => {
             .catch(err => { caches.match(e.request).then(res => res) })
     )
 })
+
+self.addEventListener('notificationclick', e=>{
+    e.notification.close()
+    if(e.action=='explore'){
+        clients.openWindow('/')
+    }
+})
