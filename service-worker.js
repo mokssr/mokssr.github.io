@@ -37,7 +37,11 @@ self.addEventListener('fetch', e => {
 
 self.addEventListener('notificationclick', e=>{
     e.notification.close()
-    if(e.action=='explore'){
+    if(!(Notification.maxActions>1)){
         clients.openWindow('/')
+    }else{
+        if(e.action=='explore'){
+            clients.openWindow('/')
+        }
     }
 })
